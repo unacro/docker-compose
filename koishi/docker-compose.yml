@@ -8,4 +8,4 @@ services:
     volumes:
       - '$PWD/data:/koishi'
     ports:
-      - 8080:80
+      - 5140:5140
