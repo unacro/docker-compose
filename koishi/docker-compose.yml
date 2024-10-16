@@ -1,0 +1,11 @@
+services:
+  koishi:
+    container_name: koishi
+    image: koishijs/koishi:latest-lite
+    restart: unless-stopped
+    environment:
+      - 'TZ=Asia/Shanghai'
+    volumes:
+      - '$PWD/data:/koishi'
+    ports:
+      - 8080:80
